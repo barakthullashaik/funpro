@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header .sub-menu{
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+header .sub-menu input{
+    margin-left: 2rem;
+    outline: none;
+    border-radius: 12px;
+}
+header .sub-menu ul{
+    list-style: none;
+    display: flex;
+}
+header .sub-menu ul li{
+    margin-left: 1rem;
+}
+header .sub-menu h1{
+    color: blue;
+}
+.one{
+    display:flex;
+    justify-content: space-around;
+}
+.one .left img{
+    height: 8rem;
+    display: flex;
+    background-color:darksalmon;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 12px;
+}
+.one .right img{
+    height: 25rem;
+    background-color: rgb(153, 172, 161);
+    border-radius: 85%;
+    margin-top: 2rem;
+}
+.one .cost h3{
+    margin-top: 2rem;
+}
+.one .cost p{
+    margin-top: 1rem;
+}
+.one .cost h4,h2{
+    margin-top: 1rem;
+}
+.two{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.two h1{
+    font-size: 3rem;
+}
+.two table,th,td{
+    border: 1px solid gray;
+    border-collapse:collapse ;
+    width: 70%;
+    font-size: 25px;
+    margin-left: 15rem;
+    margin-top: 0.5rem;
+}
+.three{
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+.three .left img{
+    height: 18rem;
+}
+.four{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+}
+.four img{
+    height: 15rem;
+    margin-top: 4rem;
+}
+.four .customer{
+    border: 1px solid gray;
+    width: 50%;
+    margin: 1rem;
+    border-radius: 12px;
+    font-size: 20px;
+}
+.four .customer spam{
+    color: gold;
+    font-size: 2rem;
+}
+@media screen and (max-width :765px){
+    .sub-menu ul li{
+        display: flex;
+    }
+    .one{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .two table{
+        margin-left: 2rem;
+    }
+    .three{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .four{
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+@media screen and (max-width :320px){
+    .sub-menu{
+        font-size: 10px;
+    }
+    .one .right img{
+        height: 13rem;
+    }
+    .four .customers{
+        margin-left: 3rem;
+        width: 70%;
+    }
+}
